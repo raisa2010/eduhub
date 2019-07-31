@@ -1,0 +1,332 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <title>Eduhub</title>
+
+      <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+      <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.9.0/css/all.css" integrity="sha384-i1LQnF23gykqWXg6jxC2ZbCbUMxyw5gLZY6UiUS98LYV5unm8GWmfkIS6jqJfb4E" crossorigin="anonymous">
+      <link rel="stylesheet" type="text/css" href="../css/main.css">
+      <link href="https://fonts.googleapis.com/css?family=Noticia+Text&display=swap" rel="stylesheet">
+      <link href="https://fonts.googleapis.com/css?family=Abril+Fatface&display=swap" rel="stylesheet">
+      <link href="https://fonts.googleapis.com/css?family=Lobster&display=swap" rel="stylesheet">
+      <link href="https://fonts.googleapis.com/css?family=DM+Serif+Text&display=swap" rel="stylesheet">
+      <link href="https://fonts.googleapis.com/css?family=Domine&display=swap" rel="stylesheet">
+      <link href="https://fonts.googleapis.com/css?family=Catamaran|Satisfy&display=swap" rel="stylesheet">
+      <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+      <link rel="stylesheet" href="https://unpkg.com/leaflet@1.5.1/dist/leaflet.css" integrity="sha512-xwE/Az9zrjBIphAcBb3F6JVqxf46+CDLwfLMHloNu6KEQCAWi6HcDUbeOfBIptF7tcCzusKFjFw2yuvEpDL9wQ==" crossorigin=""/>
+  </head>
+  <body>
+
+    <section>
+      <nav class="navbar navbar-expand-lg">
+        <div class="container">
+          <a class="navbar-brand" href="#">
+            <img src="../public/images/eduhub-yellow.png" class="img-responsive">
+          </a>
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarText">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item">
+              <a class="nav-link " href="#about">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#featured">Featured</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#whyEduhub">Why Eduhub</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#contact">Contact Us</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-item nav-link" href="">LOGIN</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-item nav-link" href="">REGISTER</a>
+            </li>
+          </ul>
+        </div>
+        </div>
+      </nav>
+    </section>
+
+    <section class="header">
+      <div class="header-info-container" data-aos="fade-up" data-aos-duration="700">
+          <div class="header-info">
+            <div class="header-text">
+              <div class="header-title-text">
+                The Best Education, At Your Fingertips
+              </div>
+              <div class="header-subtext">
+                <p>We give you access to the largest variety of schools in the nation and
+                abroad, so you can easily gain admission to the best institutes,
+                anytime anywhere.</p>
+              </div>
+            </div>
+            <div class="description row">
+              <div class="col description-elem" data-aos="fade-left">
+                <img class="description-icon" src="../public/images/elem-1.svg" alt="">
+                <p>Filter and select institutions based on academics, location, budget and more.</p>
+              </div>
+              <div class="col description-elem" data-aos="fade-up">
+                <img class="description-icon" src="../public/images/elem-2.svg" alt="">
+                <p>Submit applications and pay fees for any number of institutions through our web or mobile app.</p>
+              </div>
+              <div class="col description-elem" data-aos="fade-right">
+                <img class="description-icon" src="../public/images/elem-3.svg" alt="">
+                <p>Track and receive notifications about application status.</p>
+              </div>
+            </div>
+          </div>
+          <div class="login-reg" data-aos="fade-up">
+            <ul>
+              <li><a href="#">Login</a></li>
+              <li><a href="#">Register</a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="header-img-container">
+          <div class="header-img"></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="search" id="search">
+      <div class="search-container" data-aos="fade-up" data-aos-anchor=".search-bg-panel" data-aos-delay="500" data-aos-duration="400">
+        <div class="search-text">Let Us Help You<br>Achieve Your Potential</div>
+        <form class="expanding-search-form">
+          <div class="dropdown">
+            <a class="btn dropdown-toggle" href="#" id="dropdownMenuLink"
+            role="button" data-toggle="dropdown" aria-haspopup="true"
+            aria-expanded="false">
+              All Categories
+            </a>
+            <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+              <a class="dropdown-item" href="#"><i class="fas fa-infinity"></i>  All Categories</a>
+              <a class="dropdown-item" href="#"><i class="fas fa-school"></i>  School</a>
+              <a class="dropdown-item" href="#"><i class="fas fa-graduation-cap"></i>  College</a>
+              <a class="dropdown-item" href="#"><i class="fas fa-university"></i>  University</a>
+              <a class="dropdown-item" href="#"><i class="fas fa-certificate"></i>  Training Center</a>
+              <a class="dropdown-item" href="#"><i class="fas fa-globe-europe"></i>  Consultant Agency</a>
+            </div>
+          </div>
+          <input class="search-input" type="search" placeholder="Keyword">
+          <button class="search-button" type="button">
+    		    <span class="search-icon">
+              <i class="fa fa-search" aria-hidden="true"></i>
+    			    <span class="sr-only">Search</span>
+    		    </span>
+        	</button>
+        </form>
+      </div>
+      <div class="search-bg-panel" data-aos="slide-right" data-aos-duration=500>
+    </section>
+
+    <section class="featured">
+      <div class="grid-layout">
+          <div class="grid-item grid-item-1">
+            <img class="grid-img" src="https://images.unsplash.com/photo-1464983308776-3c7215084895?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=967&q=80" />
+            <div class="grid-overlay">
+              <p>Stride International School<p>
+            </div>
+          </div>
+          <div class="grid-item span-2 grid-item-2">item 2</div>
+          <div class="grid-item span-3 grid-item-3">item 3</div>
+          <div class="grid-item grid-item-4">item 4</div>
+          <div class="grid-item span-2 grid-item-5">item 5</div>
+          <div class="grid-item grid-item-6">item 6</div>
+          <div class="grid-item grid-item-7">item 7</div>
+          <div class="grid-item grid-item-8">item 8</div>
+          <div class="grid-item grid-item-9">item 9</div>
+          <div class="grid-item span-2 grid-item-10">item 10</div>
+          <div class="grid-item grid-item-11">item 11</div>
+          <div class="grid-item grid-item-12">item 12</div>
+          <div class="grid-item span-2 grid-item-13">item 13</div>
+          <div class="grid-item grid-item-14">item 14</div>
+          <div class="grid-item grid-item-15">item 15</div>
+          <div class="grid-item grid-item-16">item 16</div>
+          <div class="grid-item span-2 grid-item-17">item 17</div>
+          <div class="grid-item grid-item-18">item 18</div>
+          <div class="grid-item grid-item-19">item 19</div>
+          <div class="grid-item grid-item-20">item 20</div>
+          <div class="grid-item span-2-5 grid-item-21">item 21</div>
+      </div>
+    </section>
+
+      <!-- <div class="featured-bg-panel" data-aos="slide-right" data-aos-duration=500> -->
+
+    <!-- <section class="featured">
+      <div id="featured-list" class="container">
+        <div class="row">
+          <div class="col featured-title" data-aos="fade-up" data-aos-delay=500>SCHOOLS</div>
+          <div class="col featured-title" data-aos="fade-up" data-aos-delay=500>COLLEGES</div>
+        </div>
+        <div class="row">
+          <div class="col featured-content" data-aos="fade-up" data-aos-delay=500>Stride International School</div>
+          <div class="col featured-content" data-aos="fade-up" data-aos-delay=500>Abdul Kadir Mollah City College</div>
+        </div>
+        <div class="row">
+          <div class="col featured-content" data-aos="fade-up" data-aos-delay=500>Sydney International School</div>
+          <div class="col featured-content" data-aos="fade-up" data-aos-delay=500>Adamjee Cantonment Public School & College</div>
+        </div>
+        <div class="row">
+          <div class="col featured-content" data-aos="fade-up" data-aos-delay=500>BAF Shaheen English Medium School</div>
+          <div class="col featured-content" data-aos="fade-up" data-aos-delay=500>Adhyapak Abdul Majid College</div>
+        </div>
+        <div class="row">
+          <div class="col featured-content" data-aos="fade-up" data-aos-delay=500>Sir John Wilson School</div>
+          <div class="col featured-content" data-aos="fade-up" data-aos-delay=500>Aeronautical College of Bangladesh</div>
+        </div>
+        <div class="row">
+          <div class="col featured-content" data-aos="fade-up" data-aos-delay=500>Australian International School</div>
+          <div class="col featured-content" data-aos="fade-up" data-aos-delay=500>Aeronautical Institute of Bangladesh</div>
+        </div>
+        <div class="row">
+          <div class="col featured-content" data-aos="fade-up" data-aos-delay=500>Prime Bank English Medium School</div>
+          <div class="col featured-content" data-aos="fade-up" data-aos-delay=500>Agricultural University College, Mymensingh</div>
+        </div>
+        <div class="row">
+          <div class="col featured-content" data-aos="fade-up" data-aos-delay=500>Government Laboratory High School, Mymensingh</div>
+          <div class="col featured-content" data-aos="fade-up" data-aos-delay=500>Agriculture Training Institute</div>
+        </div>
+        <div class="row">
+          <div class="col featured-content" data-aos="fade-up" data-aos-delay=500>LORDS - An English Medium School</div>
+          <div class="col featured-content" data-aos="fade-up" data-aos-delay=500>Stride International School</div>
+        </div>
+        <div class="row">
+          <div class="col featured-content" data-aos="fade-up" data-aos-delay=500>Pledge Harbour International School</div>
+          <div class="col featured-content" data-aos="fade-up" data-aos-delay=500>Ahammad Uddin Shah Shishu Niketon School & College</div>
+        </div>
+        <div class="row">
+          <div class="col featured-content" data-aos="fade-up" data-aos-delay=500>Yale International School</div>
+          <div class="col featured-content" data-aos="fade-up" data-aos-delay=500>Amrita Lal Dey College</div>
+        </div>
+        <div class="row">
+          <div class="col featured-content" data-aos="fade-up" data-aos-delay=500>French International School of Dhaka</div>
+          <div class="col featured-content" data-aos="fade-up" data-aos-delay=500>Ananda Mohan College</div>
+        </div>
+        <div class="row">
+          <div class="col featured-content" data-aos="fade-up" data-aos-delay=500>Angelica International School</div>
+          <div class="col featured-content" data-aos="fade-up" data-aos-delay=500>Atomic Energy Research Establishment School and College</div>
+        </div>
+        <div class="row">
+          <div class="col featured-content" data-aos="fade-up" data-aos-delay=500>Stride International School</div>
+          <div class="col featured-content" data-aos="fade-up" data-aos-delay=500>Azam Khan Govt. Commerce College</div>
+        </div>
+        <div class="row">
+          <div class="col featured-content" data-aos="fade-up" data-aos-delay=500>Shaheed Ramiz Uddin Cantonment School</div>
+          <div class="col featured-content" data-aos="fade-up" data-aos-delay=500>Bangla College</div>
+        </div>
+        <div class="row">
+          <div class="col featured-title" data-aos="fade-up" data-aos-delay=500>UNIVERSITIES</div>
+          <div class="col featured-title invisible-placeholder">Placeholder</div>
+        </div>
+        <div class="row">
+            <div class="col featured-content" data-aos="fade-up" data-aos-delay=500>University of Dhaka</div>
+            <div class="col featured-content" data-aos="fade-up" data-aos-delay=500>University of Rajshahi</div>
+          </div>
+          <div class="row">
+            <div class="col featured-content" data-aos="fade-up" data-aos-delay=500>Bangladesh Agricultural University</div>
+            <div class="col featured-content" data-aos="fade-up" data-aos-delay=500>Bangladesh University of Engineering & Technology</div>
+          </div>
+          <div class="row">
+            <div class="col featured-content" data-aos="fade-up" data-aos-delay=500>University of Chittagong</div>
+            <div class="col featured-content" data-aos="fade-up" data-aos-delay=500>Jahangirnagar University</div>
+          </div>
+          <div class="row">
+            <div class="col featured-content" data-aos="fade-up" data-aos-delay=500>Islamic University, Bangladesh</div>
+            <div class="col featured-content" data-aos="fade-up" data-aos-delay=500>Shahjalal University of Science and Technology</div>
+          </div>
+          <div class="row">
+            <div class="col featured-content" data-aos="fade-up" data-aos-delay=500>Khulna University</div>
+            <div class="col featured-content" data-aos="fade-up" data-aos-delay=500>Bangabandhu Sheikh Mujib Medical University</div>
+          </div>
+          <div class="row">
+            <div class="col featured-content" data-aos="fade-up" data-aos-delay=500>Bangabandhu Sheikh Mujibur Rahman Agricultural University</div>
+            <div class="col featured-content" data-aos="fade-up" data-aos-delay=500>Hajee Mohammad Danesh Science & Technology University</div>
+          </div>
+          <div class="row">
+            <div class="col featured-content" data-aos="fade-up" data-aos-delay=500>Mawlana Bhashani Science and Technology University</div>
+            <div class="col featured-content" id="last-featured-content" data-aos="fade-up" data-aos-delay=500>Patuakhali Science and Technology University</div>
+          </div>
+        </div>
+        <div class="parallax-container">
+          <div id="featured-bg-text" class="" data-aos="fade-up" data-aos-duration=500>Featured</div>
+        </div>
+      </section> -->
+
+        <!-- <section id="whyEduhub">
+          <div class="row justify-content-center">
+            <div class="students-parents">
+                <div class="students-parents-img">
+                  <img class="bg" src="../public/images/blob-right-1.svg" alt="">
+                  <img class="fg floating-about-img" src="../public/images/devices-flipped.svg" alt="" data-aos="fade-up">
+                </div>
+            </div>
+
+            <div class="schools">
+                <div class="schools-img">
+                  <img class="bg" src="../public/images/blob-left.svg" alt="">
+                  <img class="fg" src="" alt="">
+                </div>
+            </div>
+          </div>
+        </section> -->
+
+        <!-- <section class="contact">
+          <div class="map-container">
+            <div id="map"></div>
+            <div class="overlay"></div>
+          </div>
+          <div class="contact-content">
+            <div class="bg-text-large" id="contact-bg">Contact</div>
+            <div class="contact-form">
+              <form action="" method="post" role="form" class="contactForm">
+                <div class="form-group">
+                  <input type="text" name="name" class="form-control" id="name" placeholder="Name" data-rule="minlen:4" data-msg="Please enter at least 4 chars">
+                  <div class="validation"></div>
+                </div>
+                <div class="form-group">
+                  <input type="email" class="form-control" name="email" id="email" placeholder="Email" data-rule="email" data-msg="Please enter a valid email">
+                  <div class="validation"></div>
+                </div>
+                <div class="form-group">
+                  <input type="text" class="form-control" name="subject" id="subject" placeholder="Subject" data-rule="minlen:4" data-msg="Please enter at least 8 chars of subject">
+                  <div class="validation"></div>
+                </div>
+                <div class="form-group">
+                  <textarea class="form-control" name="message" rows="5" data-rule="required" data-msg="Please write something for us" placeholder="Message"></textarea>
+                  <div class="validation"></div>
+                </div>
+
+                <div class="form-action">
+                  <button type="submit" class="btn btn-dark">Submit</button>
+                </div>
+              </form>
+            </div>
+          </div>
+        </section> -->
+
+        <!-- <section class="footer">
+          <div class="footer-container">
+
+          <div class="footer-content">
+
+          </div>
+          <p class="footer-bg-text">EDUHUB</p>
+        </div>
+        </section> -->
+
+
+    <script src="https://code.jquery.com/jquery-3.4.1.js" integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU=" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="https://unpkg.com/leaflet@1.5.1/dist/leaflet.js" integrity="sha512-GffPMF3RvMeYyc1LWMHtK8EbPv0iNZ8/oTtHPx9/cc2ILxQ+u905qIwdpULaqDkyBKgOaB57QTMg7ztg8Jm2Og==" crossorigin=""></script>
+    <script src="../js/main.js"></script>
+  </body>
+</html>

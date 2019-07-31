@@ -1,0 +1,640 @@
+body, html {
+  height: 100vh;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  background-color: white;
+  /* opacity: 0.5; */
+}
+
+section {
+  display: block;
+}
+
+/**
+=================
+  Header Section
+=================
+**/
+
+.header {
+  height: 100vh;
+  width: 100vw;
+  align-items: center;
+  justify-content: center;
+}
+
+.img-responsive {
+  width: 95px;
+  height: 62px;
+  transition: transform 0.5s ease-in-out;
+  transform-origin: center;
+}
+
+.navbar {
+  /* margin-right: 5vw;
+  margin-left: 5vw; */
+  background-color: #19242D;
+  transition: background-color 0.2s linear;
+}
+
+.sticky-navbar {
+  background-color: #19242D;
+  -moz-box-shadow: 0px 1px 5px 1px gray;
+  -webkit-box-shadow: 0px 1px 5px 1px gray;
+  box-shadow: 0px 1px 5px 1px gray;
+}
+
+.navbar-nav .nav-item a {
+  background-color: transparent;
+  text-decoration: none;
+  font-family: 'Domine', serif;
+  font-size: 1.1vw;
+  text-transform: uppercase;
+  margin-left: 20px;
+  color: #B19344;
+  display: inline-block;
+  position: relative;
+  transition: all .4s ease-in-out;
+}
+
+.navbar-nav .nav-item a:before {
+  content: '';
+  width: 0px;
+  height: 3px;
+  background: #B19344;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  transition: all .5s ease-in-out;
+}
+
+.navbar-nav li:hover a:before {
+  width: 100%;
+}
+
+.navbar-toggler {
+  background-color: #B19344;
+}
+
+.header-img-container {
+  position: absolute;
+  width: 100vw;
+  height: 100vh;
+  z-index: 1;
+  background-color: blue;
+}
+
+.header-img {
+  width: 100%;
+  height: 100%;
+  background: url("https://images.unsplash.com/photo-1523050854058-8df90110c9f1?ixlib=rb-1.2.1&auto=format&fit=crop&w=1500&q=80") no-repeat fixed;
+  background-size: cover;
+  overflow: hidden;
+  z-index: 1;
+}
+
+.header-info-container {
+  position: absolute;
+  width: 70vw;
+  background-color: #F0F0EF;
+  right: 15vw;
+  left: 15vw;
+  z-index: 2;
+  top: 69vh;
+  height: 83vh;
+}
+
+.header-info {
+  height: 100%;
+  width: 100%;
+  text-align: center;
+}
+
+.header-text {
+  position: absolute;
+}
+
+.header-title-text {
+  font-family: 'Satisfy', cursive;
+  font-size: 4vw;
+  margin-bottom: 15px;
+}
+
+.header-subtext {
+  font-family: 'Catamaran', sans-serif;
+  margin-right: 50px;
+  margin-left: 50px;
+  font-size: 1.3vw;
+}
+
+.description {
+  position: relative;
+  top: 32%;
+  margin: 5%;
+  height: 40%;
+  /* border: 3px solid blue; */
+}
+
+.description-elem {
+  height: 100%;
+  text-align: center;
+}
+
+.description-icon {
+  width: 60%;
+  height: 60%;
+  margin-bottom: 5%;
+}
+
+.description-elem p {
+  text-align: center;
+  font-size: 12px;
+}
+
+.login-reg {
+  position: absolute;
+  bottom: 9.5%;
+  right: 37.1%;
+  left: 37.1%;
+  margin: 0;
+  padding: 0;
+}
+
+.login-reg ul {
+  text-align: center;
+  display: flex;
+  margin: 0;
+  padding: 0;
+  border: 1px solid #19242D;
+}
+
+.login-reg ul li {
+    list-style: none;
+}
+
+.login-reg ul li a {
+  color: #19242D;
+  position: relative;
+  z-index: 2;
+  display: block;
+  width: 9vw;
+  height: 6vh;
+  text-align: center;
+  line-height: 6vh;
+  font-size: 1.2vw;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-family: 'Domine', serif;
+  letter-spacing: 2px;
+  overflow: hidden;
+  transition: .5s;
+}
+
+.login-reg ul li a:hover {
+  color: white;
+}
+
+.login-reg ul li a:before {
+  content: '';
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background: #19242D;
+  z-index: -1;
+  transition: .5s;
+}
+
+.login-reg ul li:nth-child(odd) a:before {
+  right: -100%;
+}
+
+.login-reg ul li:nth-child(even) a:before {
+  left: -100%;
+}
+
+.login-reg ul li:nth-child(odd) a:hover:before {
+  right: 0%;
+}
+
+.login-reg ul li:nth-child(even) a:hover:before {
+  left: 0%;
+}
+
+/**
+=================
+  About Section
+=================
+**/
+
+.search {
+  position: relative;
+  top: 70vh;
+  height: 70vh;
+  width: 100vw;
+}
+
+.search-bg-panel {
+  height: 78.6%;
+  width: 100%;
+  background-color: #B19344;
+  position: absolute;
+  z-index: 1;
+}
+
+.search-container {
+  position: absolute;
+  bottom: 0vh;
+  left: 5%;
+  width: 50%;
+  height: 85.7%;
+  z-index: 2;
+  background-color: #F0F0EF;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.search-text {
+  font-family: 'Domine', serif;
+  font-size: 2.5em;
+  text-align: center;
+  color: #19242D;
+}
+
+.expanding-search-form {
+  display: flex;
+  margin-top: 5%;
+  width: 50%;
+  border: 1px solid #19242D;
+  color: #19242D;
+  padding: 2px;
+  border-radius: 50px;
+  transition: width 0.3s linear;
+}
+
+.dropdown {
+  position: relative;
+  width: 180px;
+  background-color: #4488aa;
+  border-radius: 50px;
+  top: 3%;
+  left: 0.15%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#dropdownMenuLink {
+  font-size: 1vw;
+  width: 100%;
+  border-color: transparent;
+  -webkit-box-shadow: none;
+  box-shadow: none;
+  color: #fff;
+}
+
+.dropdown-menu {
+  background-color: #4488aa;
+}
+
+.dropdown-item {
+  font-size: 13px;
+  transition: color 0.25s linear;
+}
+
+.dropdown .dropdown-menu .dropdown-item:hover, .dropdown .dropdown-menu .dropdown-item:active {
+  background-color: transparent;
+  color: white;
+}
+
+.search-input, .search-button {
+  text-align: center;
+  border-color: transparent;
+  background-color: transparent;
+  outline: none;
+  -webkit-box-shadow: none;
+  box-shadow: none;
+  color: #19242D;
+}
+
+.search-input {
+  width: 60%;
+  /* border: 3px solid blue; */
+}
+
+.search-button {
+  /* position: relative; */
+  /* background-color: white; */
+  width: 40px;
+  height: 40px;
+  border-radius: 40px;
+  /* top: 1.5px;
+  right: 3px; */
+}
+
+/* .search-icon {
+  width: 25px;
+  height: 25px;
+  border-radius: 25px;
+  border: 3px solid green;
+  display: block;
+  position: relative;
+} */
+
+/**
+=================
+  Featured Section
+=================
+**/
+
+.featured {
+  position: relative;
+  top: 100vh;
+  width: 80vw;
+  left: 5vw;
+}
+
+.grid-layout {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
+    grid-gap: 10px;
+    grid-auto-rows: minmax(180px, auto);
+    grid-auto-flow: dense;
+    padding: 10px;
+}
+
+.grid-item {
+  position: relative;
+  z-index: 1;
+  overflow: hidden;
+  font-size: 14px;
+  font-weight: bold;
+  text-transform: uppercase;
+  color: #929796;
+  background-color: #333;
+  overflow: hidden;
+  /* border-radius: 5px; */
+  &:nth-child(odd) {
+      background-color: #424242;
+  }
+}
+
+.span-2 {
+    grid-column-end: span 2;
+    grid-row-end: span 2;
+}
+
+.span-2-5 {
+  grid-column-end: span 2;
+  grid-row-end: span 1;
+}
+
+.span-3 {
+    grid-column-end: span 3;
+    grid-row-end: span 4;
+}
+
+.grid-img {
+  position: absolute;
+  z-index: 2;
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  padding: 0;
+  margin: 0;
+  transition: transform 0.5s;
+}
+
+.grid-overlay {
+  position: relative;
+  height: 100%;
+  width: 100%;
+  z-index: 3;
+  /* background-color: white; */
+  display: flex;
+  align-items: center;
+  text-align: center;
+  /* opacity: 0.3; */
+}
+
+.grid-item:hover > .grid-img {
+  transform: scale(1.4);
+}
+
+.grid-item:hover > .grid-overlay {
+  background-color: black;
+  opacity: 0.1;
+}
+
+/**
+=====================
+  Why Edhub Section
+=====================
+**/
+
+.bg-container {
+  align-items: center;
+}
+
+#whyEduhub {
+  position: relative;
+}
+
+.img {
+  position: absolute;
+  background-color: gray;
+  z-index: 2;
+}
+
+.bg-text {
+  position: relative;
+  font-family: 'Abril Fatface', cursive;
+  color: gainsboro;
+  padding: 0;
+  font-size: 8vw;
+  opacity: 0.5;
+  width: 500px;
+  z-index: 2;
+}
+
+.students-parents, .schools {
+  height: 100vh;
+  width: 100vw;
+}
+
+.schools-img {
+  position: absolute;
+  left: -80px;
+}
+
+.students-parents-img {
+  position: absolute;
+  right: -100px;
+}
+
+.floating-about-img {
+  /* position: absolute; */
+  /* height: 500px; */
+  /* width: 500px; */
+  z-index: 2;
+  overflow: hidden;
+  /* right: 12vw; */
+  /* margin-top: 10vh; */
+	transform: translatey(0px);
+	animation: float 5s ease-in-out infinite;
+}
+
+@keyframes float {
+	0% {
+		transform: translatey(0px);
+	}
+	50% {
+		transform: translatey(-25px);
+	}
+	100% {
+		transform: translatey(0px);
+	}
+}
+
+#students-bg-text {
+  margin-top: 20vh;
+  /* align-self: center; */
+  left: 15vw;
+  height: 700px;
+}
+
+#parents-bg-text {
+  right: -8vw;
+  height: 500px;
+}
+
+#schools-bg-text {
+  right: -8vw;
+  top: -30vh;
+  height: 500px;
+}
+
+/**
+=====================
+  Contact Section
+=====================
+**/
+
+.contact {
+  position: relative;
+  display: block;
+  top: 100vh;
+  margin-bottom: 5vh;
+  height: 100vh;
+  /* border: 3px solid blue; */
+  /* display: flex;
+  justify-content: center; */
+}
+
+.bg-text-large {
+  font-family: 'Abril Fatface', cursive;
+  z-index: 3;
+  color: gainsboro;
+  padding: 0;
+  font-size: 15vw;
+  opacity: 0.5;
+}
+
+/* #contact-bg {
+  transition: transform 0.1s ease-out;
+} */
+
+.map-container {
+  height: 700px;
+  width: 500px;
+  position: absolute;
+  z-index: 1;
+  left: 12vw;
+}
+
+#map {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  z-index: 1;
+}
+
+.overlay {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  background-color: #19242D;
+  opacity: 0.5;
+  z-index: 2;
+}
+
+@keyframes fade {
+  from { opacity: 0; }
+}
+
+.blinking {
+  animation: fade 0.5s infinite alternate;
+}
+
+.contact-content {
+  position: absolute;
+  z-index: 2;
+  right: 0;
+}
+
+.contact-form {
+  position: absolute;
+  left: 6vw;
+  z-index: 1;
+  height: 60vh;
+  width: 35vw;
+}
+
+.form-control {
+  border-radius: 15px;
+}
+
+.btn {
+  border-radius: 10px;
+}
+
+/**
+=====================
+  Footer Section
+=====================
+**/
+
+.footer {
+  position: relative;
+  bottom: 0;
+  display: block;
+  top: 100vh;
+  width: 100vw;
+  height: 70vh;
+  background-color: #F0F0EF;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.footer-container {
+  position: absolute;
+}
+
+.footer-bg-text {
+  color: #FFF;
+  font-family: 'Domine', serif;
+  font-size: 17vw;
+  opacity: 0.35;
+}
+
+@media only screen and (max-width: 900px) {
+  .header {
+    margin-top: 0;
+  }
+}

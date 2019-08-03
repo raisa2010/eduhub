@@ -15,13 +15,13 @@ var parallaxElements = $('#featured-list'),
       var window_height = $(window).height()
       if (scrolled >= 0.03 * window_height) {
         $(".img-responsive").css("transform", "scale(0.8)")
-        navbar.addClass("fixed-top")
+        // navbar.addClass("fixed-top")
         navbar.addClass("sticky-navbar")
-        header_info_container.addClass("header-below-nav")
+        // header_info_container.addClass("header-below-nav")
       } else {
-        navbar.removeClass("fixed-top")
+        // navbar.removeClass("fixed-top")
         navbar.removeClass("sticky-navbar")
-        header_info_container.removeClass("header-below-nav")
+        // header_info_container.removeClass("header-below-nav")
         $(".img-responsive").css("transform", "scale(1)")
       }
 
@@ -42,8 +42,7 @@ var parallaxElements = $('#featured-list'),
       });
 
       // Grid
-
-
+      // console.log($(""))
 
       // Contact Bg Movement
       // var contact_bg = $('#contact-bg')

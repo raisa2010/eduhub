@@ -2,25 +2,26 @@
 <html lang="en" dir="ltr">
   <head>
     <meta charset="utf-8">
-      <meta name="viewport" content="width=device-width, initial-scale=1">
-      <title>Eduhub</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Eduhub</title>
 
-      <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-      <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.9.0/css/all.css" integrity="sha384-i1LQnF23gykqWXg6jxC2ZbCbUMxyw5gLZY6UiUS98LYV5unm8GWmfkIS6jqJfb4E" crossorigin="anonymous">
-      <link rel="stylesheet" type="text/css" href="../css/main.css">
-      <link href="https://fonts.googleapis.com/css?family=Noticia+Text&display=swap" rel="stylesheet">
-      <link href="https://fonts.googleapis.com/css?family=Abril+Fatface&display=swap" rel="stylesheet">
-      <link href="https://fonts.googleapis.com/css?family=Lobster&display=swap" rel="stylesheet">
-      <link href="https://fonts.googleapis.com/css?family=DM+Serif+Text&display=swap" rel="stylesheet">
-      <link href="https://fonts.googleapis.com/css?family=Domine&display=swap" rel="stylesheet">
-      <link href="https://fonts.googleapis.com/css?family=Catamaran|Satisfy&display=swap" rel="stylesheet">
-      <link href="https://fonts.googleapis.com/css?family=Crimson+Pro&display=swap" rel="stylesheet">
-      <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-      <link rel="stylesheet" href="https://unpkg.com/leaflet@1.5.1/dist/leaflet.css" integrity="sha512-xwE/Az9zrjBIphAcBb3F6JVqxf46+CDLwfLMHloNu6KEQCAWi6HcDUbeOfBIptF7tcCzusKFjFw2yuvEpDL9wQ==" crossorigin=""/>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.9.0/css/all.css" integrity="sha384-i1LQnF23gykqWXg6jxC2ZbCbUMxyw5gLZY6UiUS98LYV5unm8GWmfkIS6jqJfb4E" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="../css/main.css">
+    <link href="https://fonts.googleapis.com/css?family=Noticia+Text&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Abril+Fatface&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Lobster&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=DM+Serif+Text&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Domine&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Catamaran|Satisfy&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Crimson+Pro&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Great+Vibes&display=swap" rel="stylesheet">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.5.1/dist/leaflet.css" integrity="sha512-xwE/Az9zrjBIphAcBb3F6JVqxf46+CDLwfLMHloNu6KEQCAWi6HcDUbeOfBIptF7tcCzusKFjFw2yuvEpDL9wQ==" crossorigin=""/>
   </head>
   <body>
 
-    <section>
+    <section id="navigation">
       <nav class="navbar navbar-expand-lg fixed-top">
         <div class="container">
           <a class="navbar-brand" href="#">
@@ -30,40 +31,40 @@
             <span class="navbar-toggler-icon"></span>
           </button>
           <div class="collapse navbar-collapse" id="navbarText">
-          <ul class="navbar-nav ml-auto">
-            <li class="nav-item">
-              <a class="nav-link " href="#about">About</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#featured">Featured</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#whyEduhub">Why Eduhub</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#contact">Contact Us</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-item nav-link" href="">LOGIN</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-item nav-link" href="">REGISTER</a>
-            </li>
-          </ul>
-        </div>
+            <ul class="navbar-nav ml-auto">
+              <li class="nav-item">
+                <a class="nav-link " href="#about">About</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#featured">Featured</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#whyEduhub">Why Eduhub</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#contact">Contact Us</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-item nav-link" href="">LOGIN</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-item nav-link" href="">REGISTER</a>
+              </li>
+            </ul>
+          </div>
         </div>
       </nav>
     </section>
 
-    <section class="header">
+    <section class="header" id="about">
       <div class="header-info-container" data-aos="fade-up" data-aos-duration="700">
-          <div class="header-info">
-            <div class="header-text">
-              <div class="header-title-text">
-                The Best Education, At Your Fingertips
-              </div>
-              <div class="header-subtext">
-                <p>We give you access to the largest variety of schools in the nation and
+        <div class="header-info">
+          <div class="header-text">
+            <div class="header-title-text">
+              The Best Education, At Your Fingertips
+            </div>
+            <div class="header-subtext">
+              <p>We give you access to the largest variety of schools in the nation and
                 abroad, so you can easily gain admission to the best institutes,
                 anytime anywhere.</p>
               </div>
@@ -104,7 +105,7 @@
             <a class="btn dropdown-toggle" href="#" id="dropdownMenuLink"
             role="button" data-toggle="dropdown" aria-haspopup="true"
             aria-expanded="false">
-              All Categories
+            All Categories
             </a>
             <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
               <a class="dropdown-item" href="#"><i class="fas fa-infinity"></i>  All Categories</a>
@@ -117,457 +118,584 @@
           </div>
           <input class="search-input" type="search" placeholder="Keyword">
           <button class="search-button" type="button">
-    		    <span class="search-icon">
+            <span class="search-icon">
               <i class="fa fa-search" aria-hidden="true"></i>
-    			    <span class="sr-only">Search</span>
-    		    </span>
-        	</button>
+              <span class="sr-only">Search</span>
+            </span>
+          </button>
         </form>
       </div>
-      <div class="search-bg-panel" data-aos="slide-right" data-aos-duration=500>
+      <div class="search-bg-panel" data-aos="slide-right" data-aos-duration=500></div>
     </section>
 
-    <section class="grid row">
-      <div class="featured col-md-9">
-
-      <div class="grid-layout">
-          <div class="grid-item span-2 grid-item-1" data-aos="fade-up">
-            <div class="grid-item-labels">
-              <span class="label">Label1</span>
-              <span class="label">Label2</span>
-            </div>
-            <div class="grid-item-title bubble">Scholastica</div>
-            <div class="grid-item-content">
-              It is a truth universally acknowledged, that a single man in possession of a good fortune, must be in want of a wife.
-              However little known the feelings or views
-            </div>
-          </div>
-          <div class="grid-item span-2 grid-item-2" data-aos="fade-up">
-            <div class="grid-item-labels">
-              <span class="label">Label1</span>
-              <span class="label">Label2</span>
-            </div>
-            <div class="grid-item-title bubble">Scholastica</div>
-            <div class="grid-item-content">
-              It is a truth universally acknowledged, that a single man in possession of a good fortune, must be in want of a wife.
-              However little known the feelings or views
-            </div>
-          </div>
-          <div class="grid-item span-2-5 grid-item-3" data-aos="fade-up" data-aos="fade-up">item 3</div>
-          <div class="grid-item grid-item-4" data-aos="fade-up">
-
-          </div>
-          <div class="grid-item span-2 grid-item-5" data-aos="fade-up">
-            <div class="grid-item-labels">
-              <span class="label">Label1</span>
-              <span class="label">Label2</span>
-            </div>
-            <div class="grid-item-title bubble">Scholastica</div>
-            <div class="grid-item-content">
-              It is a truth universally acknowledged, that a single man in possession of a good fortune, must be in want of a wife.
-              However little known the feelings or views
-            </div>
-          </div>
-          <div class="grid-item span-2 grid-item-6 front" data-aos="fade-up">
-            <div class="grid-item-labels">
-              <span class="label">Label1</span>
-              <span class="label">Label2</span>
-            </div>
-            <div class="grid-item-title bubble">Scholastica</div>
-            <div class="grid-item-content">
-              It is a truth universally acknowledged, that a single man in possession of a good fortune, must be in want of a wife.
-              However little known the feelings or views
-            </div>
-          </div>
-          <div class="grid-item span-2 grid-item-7" data-aos="fade-up">
-            <div class="grid-item-labels">
-              <span class="label">Label1</span>
-              <span class="label">Label2</span>
-            </div>
-            <div class="grid-item-title bubble">Scholastica</div>
-            <div class="grid-item-content">
-              It is a truth universally acknowledged, that a single man in possession of a good fortune, must be in want of a wife.
-              However little known the feelings or views
-            </div>
-          </div>
-          <div class="grid-item span-2-5 grid-item-8" data-aos="fade-up" data-aos="fade-up">item 8</div>
-          <div class="grid-item grid-item-9" data-aos="fade-up">item 9</div>
-          <div class="grid-item grid-item-10" data-aos="fade-up" data-aos="fade-up">item 10</div>
-          <div class="grid-item span-2 grid-item-11" data-aos="fade-up">
-            <div class="grid-item-labels">
-              <span class="label">Label1</span>
-              <span class="label">Label2</span>
-            </div>
-            <div class="grid-item-title bubble">Scholastica</div>
-            <div class="grid-item-content">
-              It is a truth universally acknowledged, that a single man in possession of a good fortune, must be in want of a wife.
-              However little known the feelings or views
-            </div>
-          </div>
-          <div class="grid-item grid-item-12" data-aos="fade-up">item 12</div>
-          <div class="grid-item span-2 grid-item-13" data-aos="fade-up">
-            <div class="grid-item-labels">
-              <span class="label">Label1</span>
-              <span class="label">Label2</span>
-            </div>
-            <div class="grid-item-title bubble">Scholastica</div>
-            <div class="grid-item-content">
-              It is a truth universally acknowledged, that a single man in possession of a good fortune, must be in want of a wife.
-              However little known the feelings or views
-            </div>
-          </div>
-          <div class="grid-item span-2 grid-item-14" data-aos="fade-up">
-            <div class="grid-item-labels">
-              <span class="label">Label1</span>
-              <span class="label">Label2</span>
-            </div>
-            <div class="grid-item-title bubble">Scholastica</div>
-            <div class="grid-item-content">
-              It is a truth universally acknowledged, that a single man in possession of a good fortune, must be in want of a wife.
-              However little known the feelings or views
-            </div>
-          </div>
-          <div class="grid-item span-2 grid-item-15" data-aos="fade-up">
-            <div class="grid-item-labels">
-              <span class="label">Label1</span>
-              <span class="label">Label2</span>
-            </div>
-            <div class="grid-item-title bubble">Scholastica</div>
-            <div class="grid-item-content">
-              It is a truth universally acknowledged, that a single man in possession of a good fortune, must be in want of a wife.
-              However little known the feelings or views
-            </div>
-          </div>
-          <div class="grid-item grid-item-16" data-aos="fade-up">item 16</div>
-          <div class="grid-item span-2 grid-item-17" data-aos="fade-up">
-            <div class="grid-item-labels">
-              <span class="label">Label1</span>
-              <span class="label">Label2</span>
-            </div>
-            <div class="grid-item-title bubble">Scholastica</div>
-            <div class="grid-item-content">
-              It is a truth universally acknowledged, that a single man in possession of a good fortune, must be in want of a wife.
-              However little known the feelings or views
-            </div>
-          </div>
-          <div class="grid-item span-2 grid-item-18" data-aos="fade-up">
-            <div class="grid-item-labels">
-              <span class="label">Label1</span>
-              <span class="label">Label2</span>
-            </div>
-            <div class="grid-item-title bubble">Scholastica</div>
-            <div class="grid-item-content">
-              It is a truth universally acknowledged, that a single man in possession of a good fortune, must be in want of a wife.
-              However little known the feelings or views
-            </div>
-          </div>
-          <div class="grid-item grid-item-19" data-aos="fade-up">item 19</div>
-          <div class="grid-item span-2-5 grid-item-20" data-aos="fade-up">item 20</div>
-          <div class="grid-item grid-item-21" data-aos="fade-up">item 21</div>
-      </div>
-    </div>
-
-      <div class="ads col-md-3">
-        <div class="">
-          <img src="" alt="">
-          <img src="" alt="">
-          <img class="ad float-right" src="../public/images/ad1.png" alt="">
-          <img class="ad float-right" src="../public/images/ad2.png" alt="">
-          <img class="ad float-right" src="../public/images/ad3.png" alt="">
-          <img class="ad float-right" src="../public/images/ad4.png" alt="">
-          <img class="ad float-right" src="../public/images/ad5.png" alt="">
+    <section id="featured" class="featured-grid">
+      <div class="featured-heading">
+        <div class="line"></div>
+        <div class="featured-label">
+          <span id="featured-label-1" data-aos="fade-right" data-aos-delay="400">F</span>
+          <span id="featured-label-2" data-aos="fade-right" data-aos-anchor="featured-label-1" data-aos-delay="500"> E</span>
+          <span id="featured-label-3" data-aos="fade-right" data-aos-anchor="featured-label-2" data-aos-delay="600"> A</span>
+          <span id="featured-label-4" data-aos="fade-right" data-aos-anchor="featured-label-3" data-aos-delay="700"> T</span>
+          <span id="featured-label-5" data-aos="fade-right" data-aos-anchor="featured-label-4" data-aos-delay="800"> U</span>
+          <span id="featured-label-6" data-aos="fade-right" data-aos-anchor="featured-label-5" data-aos-delay="900"> R</span>
+          <span id="featured-label-7" data-aos="fade-right" data-aos-anchor="featured-label-6" data-aos-delay="1000"> E</span>
+          <span id="featured-label-8" data-aos="fade-right" data-aos-anchor="featured-label-7" data-aos-delay="1100"> D</span>
         </div>
       </div>
+      <div class="featured-content">
+        <div class="featured-row row">
+          <div class="featured col-md-9">
+            <div class="grid-layout">
+              <div class="span-label">Schools</div>
+              <div class="grid-item span-2 grid-item-1" data-aos="fade-up">
+                <!-- <div class="grid-item-icon"></div><br> -->
+                <div class="grid-item-labels">
+                  <span class="label">Label1</span>
+                  <span class="label">Label2</span>
+                </div>
+                <div class="grid-item-title bubble">Scholastica</div>
+                <div class="grid-item-content">
+                  It is a truth universally acknowledged, that a single man in possession of a good fortune, must be in want of a wife.
+                  However little known the feelings or views
+                </div>
+              </div>
 
-      <!-- <div class="grid">
-  <div class="item blog">
-    <div class="content">
-      <div class="title">
-        <h3>1: Blog Post</h3>
-      </div>
-      <div class="desc">
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce facilisis fringilla laoreet. Mauris mattis enim ut felis consectetur, vitae lacinia enim auctor. Aenean vitae fermentum odio. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed dictum non orci ut dignissim. Fusce fermentum felis aliquam, mattis nibh ut, faucibus leo. Sed lectus libero, volutpat at eros quis, venenatis tempus neque. Nulla vel faucibus orci, nec convallis ligula. Quisque maximus gravida orci, in lacinia mauris pretium nec. Sed et enim bibendum, fermentum tellus eu, eleifend ex. Aliquam lectus magna, sollicitudin vitae placerat ac, semper ut risus. Nunc vestibulum lacus et nulla volutpat auctor.</p>
-      </div>
-    </div>
-  </div>
-  <div class="item photo">
-    <div class="content">
-      <div class="title">
-        <div class="title-arrow"></div>
-        <h3>2: Photo</h3>
-      </div>
-      <img class="photothumb" src="https://www.andybarefoot.com/codepen/images/dogs/dog1.jpg">
-      <div class="desc">
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce facilisis fringilla laoreet. Mauris mattis enim ut felis consectetur, vitae lacinia enim auctor. Aenean vitae fermentum odio. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed dictum non orci ut dignissim. Fusce fermentum felis aliquam, mattis nibh ut, faucibus leo. Sed lectus libero, volutpat at eros quis, venenatis tempus neque. Nulla vel .</p>
-      </div>
-    </div>
-  </div>
-  <div class="item photo">
-    <div class="content">
-      <div class="title">
-        <h3>3: Photo</h3>
-      </div>
-      <img class="photothumb" src="https://www.andybarefoot.com/codepen/images/dogs/dog2.jpg">
-      <div class="desc">
-        <p>Lorem ipsum dolor sit amet, conse</p>
-      </div>
-    </div>
-  </div>
-  <div class="item project">
-    <div class="content">
-      <div class="title">
-        <h3>4: Project</h3>
-      </div>
-      <div class="desc">
-        <img src="https://www.andybarefoot.com/codepen/images/dogs/dog3.jpg">
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce facilisis fringilla laoreet. Mauris mattis enim ut felis consectetur, vitae lacinia enim auctor. Aenean vitae fermentum odio. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed dictum non orci ut dignissim. Fusce fermentum felis aliquam, mattis nibh ut, faucibus leo. Sed lectus libero, volutpat at eros quis, venenatis tempus neque. Nulla vel faucibus orci, nec convallis ligula. Quisque maximus gravida orci, in lacinia mauris pretium nec. Sed et enim bibendum, fermentum tellus eu, eleifend ex. Aliquam lectus magna, sollicitudin vitae placerat ac, semper ut risus. Nunc vestibulum lacus et nulla volutpat auctor.</p>
-      </div>
-    </div>
-  </div>
-  <div class="item project">
-    <div class="content">
-      <div class="title">
-        <h3>5: Project</h3>
-      </div>
-      <div class="desc">
-        <img src="https://www.andybarefoot.com/codepen/images/dogs/dog4.jpg">
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce facilisis fringilla laoreet. Mauris mattis enim ut felis consectetur, vitae lacinia enim auctor. Aenean vitae fermentum odio. Lorem, nec convallis ligula. Quisque maximus </p>
-      </div>
-    </div>
-  </div>
-  <div class="item blog">
-    <div class="content">
-      <div class="title">
-        <h3>6: Blog Post</h3>
-      </div>
-      <div class="desc">
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce facilisis fringilla laoreet. Mauris mattis enim ut felis consectetur, vitae lacinia enim auctor. Aenean vitae fermentum odio. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed dictum non orci ut dignissim. Fusce fermentum felis aliquam, mattis nibh ut, faucibus leo. Sed lectus libero, volutpat at eros quis, venenatis tempus neque. Nulla vel faucibus orci, nec convallis ligula. Quisque maximus gravida orci, in lacinia mauris pretium nec. Sed et enim bibendum, fermentum tellus eu, eleifend ex. Aliquam lectus magna, sollicitudin vitae placerat ac, semper ut risus. Nunc vestibulum lacus et nulla volutpat auctor.</p>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce facilisis fringilla laoreet. Mauris mattis enim ut felis consectetur, vitae lacinia enim auctor. Aenean vitae fermentum odio. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed dictum non orci ut dignissim. Fusce fermentum felis aliquam, mattis nibh</p>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce facilisis fringilla laoreet. Mauris mattis enim ut felis consectetur, vitae lacinia enim auctor. Aenean vitae fermentum odio. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed dictum non orci ut dignissim. Fusce fermentum felis aliquam, mattis nibh</p>
-      </div>
-    </div>
-  </div>
-  <div class="item project">
-    <div class="content">
-      <div class="title">
-        <h3>7: Project</h3>
-      </div>
-      <div class="desc">
-        <img src="https://www.andybarefoot.com/codepen/images/dogs/dog5.jpg">
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce facilisis fringilla laoreet. Mauris mattis enim ut felis consectetur, vitae lacinia enim auctor. Aenean vitae fermentum odio. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed dictum non orci ut dignissim. Fusce fermentum felis aliquam, mattis nibh ut, faucibus leo. Sed lectus libero, volutpat at eros quis, venenatis tempus neque. Nulla vel faucibus orci, nec convallis ligula. Quisque maximus gravida orci, in lacinia mauris pretium nec. Sed et enim bibendum, fermentum tellus eu, eleifend ex. Aliquam lectus magna, sollicitudin vitae placerat ac, semper ut risus. Nunc vestibulum lacus et nulla volutpat auctor.</p>
-      </div>
-    </div>
-  </div>
-  <div class="item blog">
-    <div class="content">
-      <div class="title">
-        <h3>8: Blog Post</h3>
-      </div>
-      <div class="desc">
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce facilisis fringilla laoreet. Mauris mattis enim ut felis consectetur, vitae lacinia enim auctor. Aenean vitae fermentum odio. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed dictum non orci ut dignissim. Semper ut risus. </p>
-      </div>
-    </div>
-  </div>
-  <div class="item photo">
-    <div class="content">
-      <div class="title">
-        <h3>9: Photo</h3>
-      </div>
-      <img class="photothumb" src="https://www.andybarefoot.com/codepen/images/dogs/dog2.jpg">
-      <div class="desc">
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce facilisis</p>
-      </div>
-    </div>
-  </div>
-  <div class="item blog">
-    <div class="content">
-      <div class="title">
-        <h3>10: Blog Post</h3>
-      </div>
-      <div class="desc">
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce facilisis fringilla laoreet. Mauris mattis enim ut felis consectetur, vitae lacinia enim auctor. Aenean vitae fermentum odio. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed dictum non orci ut dignissim. Fusce fermentum felis aliquam, mattis nibh ut, faucibus leo. Sed lectus libero, volutpat at eros quis, venenatis tempus neque. Nulla vel faucibus orci, nec convallis ligula. Quisque maximus gravida orci, in lacinia mauris pretium nec. Sed et enim bibendum, fermentum tellus eu, eleifend ex. Aliquam lectus magna, sollicitudin vitae placerat ac, semper ut risus. </p>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce facilisis fringilla laoreet. Mauris mattis enim ut felis consectetur, vitae lacinia enim auctor. Aenean vitae fermentum odio. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed dictum non orci ut dignissim. Fusce fermentum felis aliquam, mattis nibh ut, faucibus leo. Sed lectus libero, volutpat at eros quis, venenatis tempus neque. Nulla vel faucibus orci, nec convallis ligula. Quisque maximus gravida orci, in lacinia mauris pretium nec. Sed et enim bibendum, fermentum tellus eu, eleifend ex. Aliquam lectus magna, sollicitudin vitae placerat ac, semper ut risus. </p>
-      </div>
-    </div>
-  </div>
-  <div class="item photo">
-    <div class="content">
-      <div class="title">
-        <h3>11: Photo</h3>
-      </div>
-      <img class="photothumb" src="https://www.andybarefoot.com/codepen/images/dogs/dog9.jpg">
-      <div class="desc">
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce facilisis fringilla laoreet. Mauris mattis enim ut felis consectetur, vitae lacinia enim auctor. Aenean vitae fermentum odio. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed dictum non orci ut dignissim. Fusce fermentum felis aliquam,</p>
-      </div>
-    </div>
-  </div>
-</div> -->
+              <div class="grid-item span-2 grid-item-2" data-aos="fade-up">
+                <div class="grid-item-labels">
+                  <span class="label">Label1</span>
+                  <span class="label">Label2</span>
+                </div>
+                <div class="grid-item-title bubble">Scholastica</div>
+                <div class="grid-item-content">
+                  It is a truth universally acknowledged, that a single man in possession of a good fortune, must be in want of a wife.
+                  However little known the feelings or views
+                </div>
+              </div>
 
+              <div class="grid-item span-2-5 grid-item-3 hide" data-aos="fade-up" data-aos="fade-up">
+                <div class="grid-item-labels">
+                  <span class="label">Label1</span>
+                  <span class="label">Label2</span>
+                </div>
+                <div class="grid-item-title bubble">Scholastica</div>
+                <div class="grid-item-content">
+                  It is a truth universally acknowledged, that a single man in possession of a good fortune, must be in want of a wife.
+                  However little known the feelings or views
+                </div>
+              </div>
+
+              <div class="grid-item span-2 grid-item-4" data-aos="fade-up">
+                <div class="grid-item-labels">
+                  <span class="label">Label1</span>
+                  <span class="label">Label2</span>
+                </div>
+                <div class="grid-item-title bubble">Scholastica</div>
+                <div class="grid-item-content">
+                  It is a truth universally acknowledged, that a single man in possession of a good fortune, must be in want of a wife.
+                  However little known the feelings or views
+                </div>
+              </div>
+
+              <div class="grid-item span-2 grid-item-5" data-aos="fade-up">
+                <div class="grid-item-labels">
+                  <span class="label">Label1</span>
+                  <span class="label">Label2</span>
+                </div>
+                <div class="grid-item-title bubble">Scholastica</div>
+                <div class="grid-item-content">
+                  It is a truth universally acknowledged, that a single man in possession of a good fortune, must be in want of a wife.
+                  However little known the feelings or views
+                </div>
+              </div>
+
+              <div class="grid-item span-2-5 grid-item-6 front" data-aos="fade-up">
+                <div class="grid-item-labels">
+                  <span class="label">Label1</span>
+                  <span class="label">Label2</span>
+                </div>
+                <div class="grid-item-title bubble">Scholastica</div>
+                <div class="grid-item-content">
+                  It is a truth universally acknowledged, that a single man in possession of a good fortune, must be in want of a wife.
+                  However little known the feelings or views
+                </div>
+              </div>
+
+              <div class="grid-item span-2 grid-item-7" data-aos="fade-up">
+                <div class="grid-item-labels">
+                  <span class="label">Label1</span>
+                  <span class="label">Label2</span>
+                </div>
+                <div class="grid-item-title bubble">Scholastica</div>
+                <div class="grid-item-content">
+                  It is a truth universally acknowledged, that a single man in possession of a good fortune, must be in want of a wife.
+                  However little known the feelings or views
+                </div>
+              </div>
+
+              <div class="grid-item span-2 grid-item-2" data-aos="fade-up">
+                <div class="grid-item-labels">
+                  <span class="label">Label1</span>
+                  <span class="label">Label2</span>
+                </div>
+                <div class="grid-item-title bubble">Scholastica</div>
+                <div class="grid-item-content">
+                  It is a truth universally acknowledged, that a single man in possession of a good fortune, must be in want of a wife.
+                  However little known the feelings or views
+                </div>
+              </div>
+
+              <div class="grid-item span-2 grid-item-2" data-aos="fade-up">
+                <div class="grid-item-labels">
+                  <span class="label">Label1</span>
+                  <span class="label">Label2</span>
+                </div>
+                <div class="grid-item-title bubble">Scholastica</div>
+                <div class="grid-item-content">
+                  It is a truth universally acknowledged, that a single man in possession of a good fortune, must be in want of a wife.
+                  However little known the feelings or views
+                </div>
+              </div>
+
+              <div class="grid-item span-2 grid-item-2" data-aos="fade-up">
+                <div class="grid-item-labels">
+                  <span class="label">Label1</span>
+                  <span class="label">Label2</span>
+                </div>
+                <div class="grid-item-title bubble">Scholastica</div>
+                <div class="grid-item-content">
+                  It is a truth universally acknowledged, that a single man in possession of a good fortune, must be in want of a wife.
+                  However little known the feelings or views
+                </div>
+              </div>
+
+              <div class="grid-item span-2 grid-item-2" data-aos="fade-up">
+                <div class="grid-item-labels">
+                  <span class="label">Label1</span>
+                  <span class="label">Label2</span>
+                </div>
+                <div class="grid-item-title bubble">Scholastica</div>
+                <div class="grid-item-content">
+                  It is a truth universally acknowledged, that a single man in possession of a good fortune, must be in want of a wife.
+                  However little known the feelings or views
+                </div>
+              </div>
+
+              <div class="grid-item span-2-5 grid-item-2" data-aos="fade-up">
+                <div class="grid-item-labels">
+                  <span class="label">Label1</span>
+                  <span class="label">Label2</span>
+                </div>
+                <div class="grid-item-title bubble">Scholastica</div>
+                <div class="grid-item-content">
+                  It is a truth universally acknowledged, that a single man in possession of a good fortune, must be in want of a wife.
+                  However little known the feelings or views
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="ads col-md-3">
+            <div class="">
+              <img src="" alt="">
+              <img src="" alt="">
+              <img class="ad float-right" src="../public/images/ad1.png" alt="">
+              <img class="ad float-right" src="../public/images/ad2.png" alt="">
+              <img class="ad float-right" src="../public/images/ad3.png" alt="">
+              <img class="ad float-right" src="../public/images/ad4.png" alt="">
+              <img class="ad float-right" src="../public/images/ad5.png" alt="">
+            </div>
+          </div>
+        </div>
+
+        <div class="featured-row row">
+          <div class="featured col-md-9">
+            <div class="grid-layout">
+
+              <div class="grid-item span-2 grid-item-8" data-aos="fade-up" data-aos="fade-up">
+                <div class="grid-item-labels">
+                  <span class="label">Label1</span>
+                  <span class="label">Label2</span>
+                </div>
+                <div class="grid-item-title bubble">Scholastica</div>
+                <div class="grid-item-content">
+                  It is a truth universally acknowledged, that a single man in possession of a good fortune, must be in want of a wife.
+                  However little known the feelings or views
+                </div>
+              </div>
+
+              <div class="grid-item span-2 grid-item-9" data-aos="fade-up">
+                <div class="grid-item-labels">
+                  <span class="label">Label1</span>
+                  <span class="label">Label2</span>
+                </div>
+                <div class="grid-item-title bubble">Scholastica</div>
+                <div class="grid-item-content">
+                  It is a truth universally acknowledged, that a single man in possession of a good fortune, must be in want of a wife.
+                  However little known the feelings or views
+                </div>
+              </div>
+
+              <div class="span-label right" id="featured-colleges">Colleges</div>
+
+              <div class="grid-item span-2 grid-item-10" data-aos="fade-up" data-aos="fade-up">
+                <div class="grid-item-labels">
+                  <span class="label">Label1</span>
+                  <span class="label">Label2</span>
+                </div>
+                <div class="grid-item-title bubble">Scholastica</div>
+                <div class="grid-item-content">
+                  It is a truth universally acknowledged, that a single man in possession of a good fortune, must be in want of a wife.
+                  However little known the feelings or views
+                </div>
+              </div>
+
+              <div class="grid-item span-2 grid-item-11" data-aos="fade-up">
+                <div class="grid-item-labels">
+                  <span class="label">Label1</span>
+                  <span class="label">Label2</span>
+                </div>
+                <div class="grid-item-title bubble">Scholastica</div>
+                <div class="grid-item-content">
+                  It is a truth universally acknowledged, that a single man in possession of a good fortune, must be in want of a wife.
+                  However little known the feelings or views
+                </div>
+              </div>
+
+              <div class="grid-item span-2-5 grid-item-12" data-aos="fade-up">
+                <div class="grid-item-labels">
+                  <span class="label">Label1</span>
+                  <span class="label">Label2</span>
+                </div>
+                <div class="grid-item-title bubble">Scholastica</div>
+                <div class="grid-item-content">
+                  It is a truth universally acknowledged, that a single man in possession of a good fortune, must be in want of a wife.
+                  However little known the feelings or views
+                </div>
+              </div>
+
+              <div class="grid-item span-2 grid-item-12" data-aos="fade-up">
+                <div class="grid-item-labels">
+                  <span class="label">Label1</span>
+                  <span class="label">Label2</span>
+                </div>
+                <div class="grid-item-title bubble">Scholastica</div>
+                <div class="grid-item-content">
+                  It is a truth universally acknowledged, that a single man in possession of a good fortune, must be in want of a wife.
+                  However little known the feelings or views
+                </div>
+              </div>
+
+            </div>
+          </div>
+          <div class="ads col-md-3">
+            <div class="">
+              <img class="ad float-right" src="../public/images/ad6.png" alt="">
+              <img class="ad float-right" src="../public/images/ad7.png" alt="">
+            </div>
+          </div>
+        </div>
+
+        <div class="featured-row row">
+          <div class="featured col-md-9">
+            <div class="grid-layout">
+
+              <div class="span-label right" id="featured-universities">Universities</div>
+
+              <div class="grid-item span-2 grid-item-8" data-aos="fade-up" data-aos="fade-up">
+                <div class="grid-item-labels">
+                  <span class="label">Label1</span>
+                  <span class="label">Label2</span>
+                </div>
+                <div class="grid-item-title bubble">Scholastica</div>
+                <div class="grid-item-content">
+                  It is a truth universally acknowledged, that a single man in possession of a good fortune, must be in want of a wife.
+                  However little known the feelings or views
+                </div>
+              </div>
+
+              <div class="grid-item span-2 grid-item-9" data-aos="fade-up">
+                <div class="grid-item-labels">
+                  <span class="label">Label1</span>
+                  <span class="label">Label2</span>
+                </div>
+                <div class="grid-item-title bubble">Scholastica</div>
+                <div class="grid-item-content">
+                  It is a truth universally acknowledged, that a single man in possession of a good fortune, must be in want of a wife.
+                  However little known the feelings or views
+                </div>
+              </div>
+
+              <div class="grid-item span-2 grid-item-10" data-aos="fade-up" data-aos="fade-up">
+                <div class="grid-item-labels">
+                  <span class="label">Label1</span>
+                  <span class="label">Label2</span>
+                </div>
+                <div class="grid-item-title bubble">Scholastica</div>
+                <div class="grid-item-content">
+                  It is a truth universally acknowledged, that a single man in possession of a good fortune, must be in want of a wife.
+                  However little known the feelings or views
+                </div>
+              </div>
+
+              <div class="grid-item span-2 grid-item-11" data-aos="fade-up">
+                <div class="grid-item-labels">
+                  <span class="label">Label1</span>
+                  <span class="label">Label2</span>
+                </div>
+                <div class="grid-item-title bubble">Scholastica</div>
+                <div class="grid-item-content">
+                  It is a truth universally acknowledged, that a single man in possession of a good fortune, must be in want of a wife.
+                  However little known the feelings or views
+                </div>
+              </div>
+
+              <div class="grid-item span-2-5 grid-item-12" data-aos="fade-up">
+                <div class="grid-item-labels">
+                  <span class="label">Label1</span>
+                  <span class="label">Label2</span>
+                </div>
+                <div class="grid-item-title bubble">Scholastica</div>
+                <div class="grid-item-content">
+                  It is a truth universally acknowledged, that a single man in possession of a good fortune, must be in want of a wife.
+                  However little known the feelings or views
+                </div>
+              </div>
+
+              <div class="grid-item span-2 grid-item-12" data-aos="fade-up">
+                <div class="grid-item-labels">
+                  <span class="label">Label1</span>
+                  <span class="label">Label2</span>
+                </div>
+                <div class="grid-item-title bubble">Scholastica</div>
+                <div class="grid-item-content">
+                  It is a truth universally acknowledged, that a single man in possession of a good fortune, must be in want of a wife.
+                  However little known the feelings or views
+                </div>
+              </div>
+
+            </div>
+          </div>
+          <div class="ads col-md-3">
+            <div class="">
+              <img class="ad float-right" src="../public/images/ad8.png" alt="">
+              <img class="ad float-right" src="../public/images/ad1.png" alt="">
+              <img class="ad float-right" src="../public/images/ad2.png" alt="">
+            </div>
+          </div>
+        </div>
+
+        <div class="featured-row row">
+          <div class="featured col-md-9">
+            <div class="grid-layout">
+
+              <div class="grid-item span-2-5 grid-item-12" data-aos="fade-up">
+                <div class="grid-item-labels">
+                  <span class="label">Label1</span>
+                  <span class="label">Label2</span>
+                </div>
+                <div class="grid-item-title bubble">Scholastica</div>
+                <div class="grid-item-content">
+                  It is a truth universally acknowledged, that a single man in possession of a good fortune, must be in want of a wife.
+                  However little known the feelings or views
+                </div>
+              </div>
+
+              <div class="span-label" id="featured-consultants">  Foreign Education <span style="float:center">Consultants</span></div>
+
+              <div class="grid-item span-2 grid-item-13" data-aos="fade-up">
+                <div class="grid-item-labels">
+                  <span class="label">Label1</span>
+                  <span class="label">Label2</span>
+                </div>
+                <div class="grid-item-title bubble">Scholastica</div>
+                <div class="grid-item-content">
+                  It is a truth universally acknowledged, that a single man in possession of a good fortune, must be in want of a wife.
+                  However little known the feelings or views
+                </div>
+              </div>
+
+              <div class="grid-item span-2 grid-item-14" data-aos="fade-up">
+                <div class="grid-item-labels">
+                  <span class="label">Label1</span>
+                  <span class="label">Label2</span>
+                </div>
+                <div class="grid-item-title bubble">Scholastica</div>
+                <div class="grid-item-content">
+                  It is a truth universally acknowledged, that a single man in possession of a good fortune, must be in want of a wife.
+                  However little known the feelings or views
+                </div>
+              </div>
+
+              <div class="grid-item span-2 grid-item-15" data-aos="fade-up">
+                <div class="grid-item-labels">
+                  <span class="label">Label1</span>
+                  <span class="label">Label2</span>
+                </div>
+                <div class="grid-item-title bubble">Scholastica</div>
+                <div class="grid-item-content">
+                  It is a truth universally acknowledged, that a single man in possession of a good fortune, must be in want of a wife.
+                  However little known the feelings or views
+                </div>
+              </div>
+
+              <div class="grid-item span-2 grid-item-16" data-aos="fade-up">
+                <div class="grid-item-labels">
+                  <span class="label">Label1</span>
+                  <span class="label">Label2</span>
+                </div>
+                <div class="grid-item-title bubble">Scholastica</div>
+                <div class="grid-item-content">
+                  It is a truth universally acknowledged, that a single man in possession of a good fortune, must be in want of a wife.
+                  However little known the feelings or views
+                </div>
+              </div>
+
+              <div class="grid-item span-2-5 grid-item-17" data-aos="fade-up">
+                <div class="grid-item-labels">
+                  <span class="label">Label1</span>
+                  <span class="label">Label2</span>
+                </div>
+                <div class="grid-item-title bubble">Scholastica</div>
+                <div class="grid-item-content">
+                  It is a truth universally acknowledged, that a single man in possession of a good fortune, must be in want of a wife.
+                  However little known the feelings or views
+                </div>
+              </div>
+
+              <div class="grid-item span-2-5 grid-item-18" data-aos="fade-up">
+                <div class="grid-item-labels">
+                  <span class="label">Label1</span>
+                  <span class="label">Label2</span>
+                </div>
+                <div class="grid-item-title bubble">Scholastica</div>
+                <div class="grid-item-content">
+                  It is a truth universally acknowledged, that a single man in possession of a good fortune, must be in want of a wife.
+                  However little known the feelings or views
+                </div>
+              </div>
+
+
+              <div class="grid-item span-2 grid-item-19" data-aos="fade-up">
+                <div class="grid-item-labels">
+                  <span class="label">Label1</span>
+                  <span class="label">Label2</span>
+                </div>
+                <div class="grid-item-title bubble">Scholastica</div>
+                <div class="grid-item-content">
+                  It is a truth universally acknowledged, that a single man in possession of a good fortune, must be in want of a wife.
+                  However little known the feelings or views
+                </div>
+              </div>
+
+              <div class="grid-item span-2-5 grid-item-20" data-aos="fade-up">
+                <div class="grid-item-labels">
+                  <span class="label">Label1</span>
+                  <span class="label">Label2</span>
+                </div>
+                <div class="grid-item-title bubble">Scholastica</div>
+                <div class="grid-item-content">
+                  It is a truth universally acknowledged, that a single man in possession of a good fortune, must be in want of a wife.
+                  However little known the feelings or views
+                </div>
+              </div>
+
+              <div class="grid-item span-2 grid-item-21" data-aos="fade-up">
+                <div class="grid-item-labels">
+                  <span class="label">Label1</span>
+                  <span class="label">Label2</span>
+                </div>
+                <div class="grid-item-title bubble">Scholastica</div>
+                <div class="grid-item-content">
+                  It is a truth universally acknowledged, that a single man in possession of a good fortune, must be in want of a wife.
+                  However little known the feelings or views
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="ads col-md-3">
+            <div class="">
+              <img class="ad float-right" src="../public/images/ad3.png" alt="">
+              <img class="ad float-right" src="../public/images/ad4.png" alt="">
+              <img class="ad float-right" src="../public/images/ad5.png" alt="">
+              <img class="ad float-right" src="../public/images/ad6.png" alt="">
+            </div>
+          </div>
+        </div>
+      </div>
     </section>
 
-      <!-- <div class="featured-bg-panel" data-aos="slide-right" data-aos-duration=500> -->
+    <section id="whyEduhub" id="whuEduhub">
+      <div class="students-parents row">
+        <div class="students-parents-content col-md-6" data-aos="slide-left" data-aos-delay="500" data-aos-duration="500">
+          <div class="heading" data-aos="fade-up" data-aos-delay="700">For Students & Parents</div>
+          <p class="content" data-aos="fade-up" data-aos-delay="700">Add any number of applicants to a single profile
+          and manage relevant documents and fees across different devices. Search for
+          and apply to your preferred institutions based on a number of criteria
+          including reviews, academics, location, budget and more - all
+          without leaving the comfort of your seat!
+          </p>
+          <button type="button" class="btn redirect" name="button">Applicants <i class="fas fa-arrow-right"></i></button>
+        </div>
+        <div class="students-parents-img col-md-6" data-aos="slide-left" data-aos-duration="500"></div>
+      </div>
 
-    <!-- <section class="featured">
-      <div id="featured-list" class="container">
-        <div class="row">
-          <div class="col featured-title" data-aos="fade-up" data-aos-delay=500>SCHOOLS</div>
-          <div class="col featured-title" data-aos="fade-up" data-aos-delay=500>COLLEGES</div>
+      <div class="schools row">
+        <div class="schools-img col-md-6" data-aos="slide-right" data-aos-duration="500"></div>
+        <div class="schools-content col-md-6" data-aos="slide-right" data-aos-delay="500" data-aos-duration="500">
+          <div class="heading" data-aos="fade-up" data-aos-delay="700">For Schools & Foreign Education Consultants</div>
+          <p class="content" data-aos="fade-up" data-aos-delay="700">Skip the paperwork and manage all applicant
+            information through our portal. You can even notify them
+            about exams, results and fees, at the click of a button.
+          </p>
+          <button type="button" class="btn redirect" name="button"><i class="fas fa-arrow-left"></i> Institutions</button>
         </div>
-        <div class="row">
-          <div class="col featured-content" data-aos="fade-up" data-aos-delay=500>Stride International School</div>
-          <div class="col featured-content" data-aos="fade-up" data-aos-delay=500>Abdul Kadir Mollah City College</div>
-        </div>
-        <div class="row">
-          <div class="col featured-content" data-aos="fade-up" data-aos-delay=500>Sydney International School</div>
-          <div class="col featured-content" data-aos="fade-up" data-aos-delay=500>Adamjee Cantonment Public School & College</div>
-        </div>
-        <div class="row">
-          <div class="col featured-content" data-aos="fade-up" data-aos-delay=500>BAF Shaheen English Medium School</div>
-          <div class="col featured-content" data-aos="fade-up" data-aos-delay=500>Adhyapak Abdul Majid College</div>
-        </div>
-        <div class="row">
-          <div class="col featured-content" data-aos="fade-up" data-aos-delay=500>Sir John Wilson School</div>
-          <div class="col featured-content" data-aos="fade-up" data-aos-delay=500>Aeronautical College of Bangladesh</div>
-        </div>
-        <div class="row">
-          <div class="col featured-content" data-aos="fade-up" data-aos-delay=500>Australian International School</div>
-          <div class="col featured-content" data-aos="fade-up" data-aos-delay=500>Aeronautical Institute of Bangladesh</div>
-        </div>
-        <div class="row">
-          <div class="col featured-content" data-aos="fade-up" data-aos-delay=500>Prime Bank English Medium School</div>
-          <div class="col featured-content" data-aos="fade-up" data-aos-delay=500>Agricultural University College, Mymensingh</div>
-        </div>
-        <div class="row">
-          <div class="col featured-content" data-aos="fade-up" data-aos-delay=500>Government Laboratory High School, Mymensingh</div>
-          <div class="col featured-content" data-aos="fade-up" data-aos-delay=500>Agriculture Training Institute</div>
-        </div>
-        <div class="row">
-          <div class="col featured-content" data-aos="fade-up" data-aos-delay=500>LORDS - An English Medium School</div>
-          <div class="col featured-content" data-aos="fade-up" data-aos-delay=500>Stride International School</div>
-        </div>
-        <div class="row">
-          <div class="col featured-content" data-aos="fade-up" data-aos-delay=500>Pledge Harbour International School</div>
-          <div class="col featured-content" data-aos="fade-up" data-aos-delay=500>Ahammad Uddin Shah Shishu Niketon School & College</div>
-        </div>
-        <div class="row">
-          <div class="col featured-content" data-aos="fade-up" data-aos-delay=500>Yale International School</div>
-          <div class="col featured-content" data-aos="fade-up" data-aos-delay=500>Amrita Lal Dey College</div>
-        </div>
-        <div class="row">
-          <div class="col featured-content" data-aos="fade-up" data-aos-delay=500>French International School of Dhaka</div>
-          <div class="col featured-content" data-aos="fade-up" data-aos-delay=500>Ananda Mohan College</div>
-        </div>
-        <div class="row">
-          <div class="col featured-content" data-aos="fade-up" data-aos-delay=500>Angelica International School</div>
-          <div class="col featured-content" data-aos="fade-up" data-aos-delay=500>Atomic Energy Research Establishment School and College</div>
-        </div>
-        <div class="row">
-          <div class="col featured-content" data-aos="fade-up" data-aos-delay=500>Stride International School</div>
-          <div class="col featured-content" data-aos="fade-up" data-aos-delay=500>Azam Khan Govt. Commerce College</div>
-        </div>
-        <div class="row">
-          <div class="col featured-content" data-aos="fade-up" data-aos-delay=500>Shaheed Ramiz Uddin Cantonment School</div>
-          <div class="col featured-content" data-aos="fade-up" data-aos-delay=500>Bangla College</div>
-        </div>
-        <div class="row">
-          <div class="col featured-title" data-aos="fade-up" data-aos-delay=500>UNIVERSITIES</div>
-          <div class="col featured-title invisible-placeholder">Placeholder</div>
-        </div>
-        <div class="row">
-            <div class="col featured-content" data-aos="fade-up" data-aos-delay=500>University of Dhaka</div>
-            <div class="col featured-content" data-aos="fade-up" data-aos-delay=500>University of Rajshahi</div>
-          </div>
-          <div class="row">
-            <div class="col featured-content" data-aos="fade-up" data-aos-delay=500>Bangladesh Agricultural University</div>
-            <div class="col featured-content" data-aos="fade-up" data-aos-delay=500>Bangladesh University of Engineering & Technology</div>
-          </div>
-          <div class="row">
-            <div class="col featured-content" data-aos="fade-up" data-aos-delay=500>University of Chittagong</div>
-            <div class="col featured-content" data-aos="fade-up" data-aos-delay=500>Jahangirnagar University</div>
-          </div>
-          <div class="row">
-            <div class="col featured-content" data-aos="fade-up" data-aos-delay=500>Islamic University, Bangladesh</div>
-            <div class="col featured-content" data-aos="fade-up" data-aos-delay=500>Shahjalal University of Science and Technology</div>
-          </div>
-          <div class="row">
-            <div class="col featured-content" data-aos="fade-up" data-aos-delay=500>Khulna University</div>
-            <div class="col featured-content" data-aos="fade-up" data-aos-delay=500>Bangabandhu Sheikh Mujib Medical University</div>
-          </div>
-          <div class="row">
-            <div class="col featured-content" data-aos="fade-up" data-aos-delay=500>Bangabandhu Sheikh Mujibur Rahman Agricultural University</div>
-            <div class="col featured-content" data-aos="fade-up" data-aos-delay=500>Hajee Mohammad Danesh Science & Technology University</div>
-          </div>
-          <div class="row">
-            <div class="col featured-content" data-aos="fade-up" data-aos-delay=500>Mawlana Bhashani Science and Technology University</div>
-            <div class="col featured-content" id="last-featured-content" data-aos="fade-up" data-aos-delay=500>Patuakhali Science and Technology University</div>
-          </div>
-        </div>
-        <div class="parallax-container">
-          <div id="featured-bg-text" class="" data-aos="fade-up" data-aos-duration=500>Featured</div>
-        </div>
-      </section> -->
+      </div>
+    </section>
 
-        <!-- <section id="whyEduhub">
-          <div class="row justify-content-center">
-            <div class="students-parents">
-                <div class="students-parents-img">
-                  <img class="bg" src="../public/images/blob-right-1.svg" alt="">
-                  <img class="fg floating-about-img" src="../public/images/devices-flipped.svg" alt="" data-aos="fade-up">
-                </div>
-            </div>
-
-            <div class="schools">
-                <div class="schools-img">
-                  <img class="bg" src="../public/images/blob-left.svg" alt="">
-                  <img class="fg" src="" alt="">
-                </div>
-            </div>
-          </div>
-        </section> -->
-
-        <!-- <section class="contact">
-          <div class="map-container">
-            <div id="map"></div>
-            <div class="overlay"></div>
-          </div>
-          <div class="contact-content">
-            <div class="bg-text-large" id="contact-bg">Contact</div>
-            <div class="contact-form">
-              <form action="" method="post" role="form" class="contactForm">
-                <div class="form-group">
-                  <input type="text" name="name" class="form-control" id="name" placeholder="Name" data-rule="minlen:4" data-msg="Please enter at least 4 chars">
-                  <div class="validation"></div>
-                </div>
-                <div class="form-group">
-                  <input type="email" class="form-control" name="email" id="email" placeholder="Email" data-rule="email" data-msg="Please enter a valid email">
-                  <div class="validation"></div>
-                </div>
-                <div class="form-group">
-                  <input type="text" class="form-control" name="subject" id="subject" placeholder="Subject" data-rule="minlen:4" data-msg="Please enter at least 8 chars of subject">
-                  <div class="validation"></div>
-                </div>
-                <div class="form-group">
-                  <textarea class="form-control" name="message" rows="5" data-rule="required" data-msg="Please write something for us" placeholder="Message"></textarea>
-                  <div class="validation"></div>
-                </div>
-
-                <div class="form-action">
-                  <button type="submit" class="btn btn-dark">Submit</button>
-                </div>
-              </form>
-            </div>
-          </div>
-        </section> -->
-
-        <!-- <section class="footer">
-          <div class="footer-container">
-
-          <div class="footer-content">
-
-          </div>
-          <p class="footer-bg-text">EDUHUB</p>
+    <section class="contact" id="contact">
+        <div class="map-container">
+          <div id="map" data-aos="fade-right" data-aos-anchor="#contact-bg" data-aos-duration="500" data-aos-delay="500"></div>
+          <div class="overlay"></div>
         </div>
-        </section> -->
+        <div class="contact-content">
+          <div class="bg-text-large" id="contact-bg" data-aos="fade-up" data-aos-duration="500">Contact</div>
+          <div class="contact-form">
+            <form action="" method="post" role="form" class="contactForm">
+              <div class="form-group">
+                <input type="text" name="name" class="form-control" id="name" placeholder="Name" data-rule="minlen:4" data-msg="Please enter at least 4 chars">
+                <div class="validation"></div>
+              </div>
+              <div class="form-group">
+                <input type="email" class="form-control" name="email" id="email" placeholder="Email" data-rule="email" data-msg="Please enter a valid email">
+                <div class="validation"></div>
+              </div>
+              <div class="form-group">
+                <input type="text" class="form-control" name="subject" id="subject" placeholder="Subject" data-rule="minlen:4" data-msg="Please enter at least 8 chars of subject">
+                <div class="validation"></div>
+              </div>
+              <div class="form-group">
+                <textarea class="form-control" name="message" rows="5" data-rule="required" data-msg="Please write something for us" placeholder="Message"></textarea>
+                <div class="validation"></div>
+              </div>
+
+              <div class="form-action">
+                <button type="submit" class="btn btn-dark">Submit</button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </section>
+
+    <section class="footer" id="footer">
+        <div class="footer-container">
+          <div class="footer-content row">
+            <div class="left col-md-6"></div>
+            <div class="right col-md-6"></div>
+          </div>
+          <p class="footer-bg-text">E D U H U B</p>
+        </div>
+      </section>
 
 
     <script src="https://code.jquery.com/jquery-3.4.1.js" integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU=" crossorigin="anonymous"></script>

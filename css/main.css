@@ -67,7 +67,7 @@ section {
 .navbar-nav .nav-item a:before {
   content: '';
   width: 0px;
-  height: 3px;
+  height: 1px;
   background: #B19344;
   position: absolute;
   top: 100%;
@@ -295,7 +295,6 @@ section {
 
 #dropdownMenuLink {
   font-size: 1vw;
-  width: 100%;
   border-color: transparent;
   -webkit-box-shadow: none;
   box-shadow: none;
@@ -356,11 +355,36 @@ section {
 =================
 **/
 
-.grid {
+.featured-grid {
   position: relative;
-  top: 100vh;
+  top: 80vh;
   width: 95vw;
   left: 4vw;
+}
+
+.featured-heading {
+  position: relative;
+  width: 30vw;
+  left: 57%;
+}
+
+.line {
+  height: 0px;
+  background-color: #19242D;
+  width: 2px;
+  position: absolute;
+  transition: height 0.5s ease-out;
+}
+
+.featured-label {
+  position: relative;
+  height: 20vh;
+  width: 30vw;
+  top: 9vh;
+  left: 5vw;
+  font-family: 'Domine', serif;
+  color: #19242D;
+  font-size: 2.5em;
 }
 
 .featured {
@@ -368,37 +392,38 @@ section {
 }
 
 .grid-layout {
-    width: 100%;
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
-    grid-gap: 30px;
-    grid-auto-rows: minmax(180px, auto);
-    grid-auto-flow: dense;
+  width: 100%;
+  top: 0;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  grid-gap: 30px;
+  grid-auto-rows: minmax(180px, auto);
+  grid-auto-flow: dense;
 }
 
 .grid-item {
   position: relative;
   z-index: 1;
   overflow: hidden;
-  font-size: 14px;
-  color: #929796;
-  background-color: transparent;
   border-radius: 5px;
   overflow: hidden;
   -moz-box-shadow: 0px 1px 5px 1px gainsboro;
   -webkit-box-shadow: 0px 1px 5px 1px gainsboro;
   box-shadow: 0px 1px 5px 1px gainsboro;
-
   display: flex;
   justify-content: center;
   align-items: left;
   flex-direction: column;
   padding: 7%;
-  transition: transform 0.3s ease-in;
+  background-color: transparent;
+  transition: all 1s;
   color: #19242D;
 }
 
-.grid-item-hover:hover {
+.grid-item:hover {
+  background-color: #19242D;
+  opacity: 0.4;
+  color: white;
 }
 
 .grid-item-labels {
@@ -411,16 +436,16 @@ section {
   margin-right: 3px;
 }
 
-.grid-item-title {
-  /* width: 100%;
-  background-color: gainsboro;
-  height: 30%;
-  display: flex;
-  align-items: center;
-  padding: 7%;
-  transition: transform 0.3s ease-in;
+.span-2 .grid-item-icon {
+  width: 75px;
+  height: 75px;
+  position: relative;
+  left: 35%;
+  /* border: 3px solid blue; */
+  background: url("")
+}
 
-  color: #19242D; */
+.grid-item-title {
   font-family: 'Domine', serif;
   font-size: 2.5em;
   margin-top: 3%;
@@ -428,12 +453,58 @@ section {
 }
 
 .grid-item-content {
-
+  font-size: 14px;
 }
 
 .span-2 {
     grid-column-end: span 1;
     grid-row-end: span 2;
+}
+
+.featured-row {
+  margin-top: 20vh;
+}
+
+.span-label {
+  position: relative;
+  grid-column-end: span 1;
+  grid-row-end: span 3;
+  border: none;
+  -webkit-box-shadow: none;
+  -moz-box-shadow: none;
+  box-shadow: none;
+  font-family: 'Great Vibes', cursive;
+  font-size: 19em;
+  color: #B19344;
+  left: 9.5vw;
+  top: 35vh;
+  opacity: 0.6;
+  transform: rotate(-90deg);
+}
+
+.spin-label.right {
+  float: right;
+}
+
+#featured-colleges {
+  font-size: 15em;
+  float: right;
+}
+
+#featured-universities {
+  float: left;
+  top: 70%;
+  font-size: 15em;
+}
+
+#featured-consultants {
+  position: relative;
+  font-size: 7em;
+  height: 300px;
+  width: 1000px;
+  left: -400px;
+  bottom: -100px;
+  top: 50px;
 }
 
 .span-2-5 {
@@ -450,122 +521,75 @@ section {
   margin-bottom: 5vh;
 }
 
-/* .grid-img {
-  position: absolute;
-  z-index: 2;
-  height: 100%;
-  width: 100%;
-  object-fit: cover;
-  padding: 0;
-  margin: 0;
-  transition: transform 0.5s;
-}
-
-.grid-overlay {
-  position: relative;
-  height: 100%;
-  width: 100%;
-  z-index: 3;
-  display: flex;
-  align-items: center;
-  text-align: center;
-}
-
-.grid-item:hover > .grid-img {
-  transform: scale(1.4);
-}
-
-.grid-item:hover > .grid-overlay {
-  background-color: black;
-  opacity: 0.1;
-} */
-
 /**
 =====================
   Why Edhub Section
 =====================
 **/
 
-.bg-container {
-  align-items: center;
-}
-
 #whyEduhub {
   position: relative;
-}
-
-.img {
-  position: absolute;
-  background-color: gray;
-  z-index: 2;
-}
-
-.bg-text {
-  position: relative;
-  font-family: 'Abril Fatface', cursive;
-  color: gainsboro;
-  padding: 0;
-  font-size: 8vw;
-  opacity: 0.5;
-  width: 500px;
-  z-index: 2;
-}
-
-.students-parents, .schools {
-  height: 100vh;
+  top: 100vh;
+  height: 150vh;
   width: 100vw;
 }
 
-.schools-img {
-  position: absolute;
-  left: -80px;
+.students-parents, .schools {
+  height: 50%;
+  width: 100%;
 }
 
 .students-parents-img {
-  position: absolute;
-  right: -100px;
-}
-
-.floating-about-img {
-  /* position: absolute; */
-  /* height: 500px; */
-  /* width: 500px; */
+  background: url("https://images.unsplash.com/photo-1554415707-6e8cfc93fe23?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1500&q=80");
+  background-repeat: no-repeat;
+  background-size: cover;
   z-index: 2;
-  overflow: hidden;
-  /* right: 12vw; */
-  /* margin-top: 10vh; */
-	transform: translatey(0px);
-	animation: float 5s ease-in-out infinite;
 }
 
-@keyframes float {
-	0% {
-		transform: translatey(0px);
-	}
-	50% {
-		transform: translatey(-25px);
-	}
-	100% {
-		transform: translatey(0px);
-	}
+.schools-img {
+  background: url("../public/images/paperwork.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  z-index: 2;
 }
 
-#students-bg-text {
-  margin-top: 20vh;
-  /* align-self: center; */
-  left: 15vw;
-  height: 700px;
+.students-parents-content, .schools-content {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  padding-left: 5%;
+  padding-right: 5%;
+  background-color: #F0F0EF;
+  z-index: 1;
 }
 
-#parents-bg-text {
-  right: -8vw;
-  height: 500px;
+.heading {
+  font-family: 'Domine', serif;
+  margin: 5%;
+  font-size: 2.5em;
+  color: #19242D;
 }
 
-#schools-bg-text {
-  right: -8vw;
-  top: -30vh;
-  height: 500px;
+.content {
+  font-family: 'Catamaran', sans-serif;
+  font-size: 1.1em;
+  color: gray;
+}
+
+.redirect {
+  margin-top: 3%;
+  padding: 15px;
+  border-radius: 25px;
+  color: #fff;
+}
+
+.fa-arrow-right {
+  margin-left: 10px;
+}
+
+.fa-arrow-left {
+  margin-right: 10px;
 }
 
 /**
@@ -577,26 +601,24 @@ section {
 .contact {
   position: relative;
   display: block;
-  top: 100vh;
+  top: 120vh;
   margin-bottom: 5vh;
   height: 100vh;
-  /* border: 3px solid blue; */
-  /* display: flex;
-  justify-content: center; */
 }
 
 .bg-text-large {
-  font-family: 'Abril Fatface', cursive;
+  font-family: 'Great Vibes', cursive;
+  width: 50vw;
   z-index: 3;
-  color: gainsboro;
+  color: #B19344;
+  height: 42vh;
   padding: 0;
-  font-size: 15vw;
-  opacity: 0.5;
+  font-size: 17vw;
 }
 
-/* #contact-bg {
-  transition: transform 0.1s ease-out;
-} */
+#contact-bg {
+  opacity: 0.5;
+}
 
 .map-container {
   height: 700px;
@@ -613,13 +635,14 @@ section {
   margin: 0;
   padding: 0;
   z-index: 1;
+  border-radius: 5px;
 }
 
 .overlay {
   width: 100%;
   height: 100%;
   position: relative;
-  background-color: #19242D;
+  background-color: transparent;
   opacity: 0.5;
   z-index: 2;
 }
@@ -635,23 +658,33 @@ section {
 .contact-content {
   position: absolute;
   z-index: 2;
-  right: 0;
+  right: 6vw;
 }
 
 .contact-form {
   position: absolute;
   left: 6vw;
   z-index: 1;
+  /* right: 0; */
   height: 60vh;
   width: 35vw;
 }
 
 .form-control {
   border-radius: 15px;
+  border: none;
+  -moz-box-shadow: 0px 1px 2px 1px gainsboro;
+  -webkit-box-shadow: 0px 2px 1px 1px gainsboro;
+  box-shadow: 0px 1px 2px 1px gainsboro;
 }
 
 .btn {
+  background-color: #4488aa;
+  border: none;
   border-radius: 10px;
+  -moz-box-shadow: 0px 1px 2px 1px gainsboro;
+  -webkit-box-shadow: 0px 2px 1px 1px gainsboro;
+  box-shadow: 0px 1px 2px 1px gainsboro;
 }
 
 /**
@@ -664,9 +697,9 @@ section {
   position: relative;
   bottom: 0;
   display: block;
-  top: 100vh;
+  top: 140vh;
   width: 100vw;
-  height: 70vh;
+  height: 80vh;
   background-color: #F0F0EF;
   display: flex;
   align-items: center;
@@ -678,11 +711,29 @@ section {
 }
 
 .footer-bg-text {
-  color: #FFF;
+  color: white;
   font-family: 'Domine', serif;
-  font-size: 17vw;
-  opacity: 0.35;
+  font-size: 15vw;
+  opacity: 0.6;
+  z-index: 1;
 }
+
+.footer-content {
+  position: relative;
+  z-index: 2;
+}
+
+.footer-content .left {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  /* border: 3px solid blue; */
+}
+
+ .footer-content .right {
+   /* border: 3px solid red; */
+ }
 
 @media only screen and (max-width: 900px) {
   .header {
@@ -691,6 +742,16 @@ section {
 
   .featured {
     width: 100%;
+  }
+
+  .ads {
+    display: none;
+  }
+
+  .span-label {
+    transform: rotate(0deg);
+    display: block;
+    top: 0;
   }
 }
 
